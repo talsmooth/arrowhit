@@ -32,7 +32,7 @@ public class Arrow : MonoBehaviour {
 
     public int sp2;
 
-    public 
+    public Collider myCol;
 
 	// Use this for initialization
 	void Start () 
@@ -63,7 +63,7 @@ public class Arrow : MonoBehaviour {
             sp1++;
             if (sp1 > 15)
             {
-                //Destroy (splash1);
+                Destroy (splash1);
                 spl1 = false;
             }
         }
@@ -101,7 +101,7 @@ public class Arrow : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "fruit")
+        if (collider.gameObject.tag == "fruit" || collider.gameObject.tag == "dummy")
         {
             for (int i = 0; i < 3; i++)
             {
@@ -124,25 +124,32 @@ public class Arrow : MonoBehaviour {
                         spl1 = true;
                     }
 
-                        
-                    StabFruit(collider, col[i]);
-                    return;
+                    if (collider.gameObject.tag == "fruit")
+                    {
+                        StabFruit(collider, col[i], false);
+                        return;
+                    }
+
+                    else
+                    {
+                        StabFruit(collider, col[i], true);
+                        return;
+                    }
                 }
             }
 
         }
-        else
+
+        else if (collider.gameObject.tag == "bomb")
         {
-            if (collider.gameObject.tag == "bomb")
-            {
-                Game.gameOver = true;
-            }
+            Game.gameOver = true;
         }
+
+
     }
 
-    void StabFruit(Collider collider, GameObject col)
+    void StabFruit(Collider collider, GameObject col, bool dummy)
     {
-        Game.hits++;
         col.GetComponent<ArrowCollider>().myFruit = collider.gameObject;
         col.GetComponent<ArrowCollider>().copy = Instantiate(collider.gameObject);
         col.GetComponent<ArrowCollider>().align = true;
@@ -153,6 +160,12 @@ public class Arrow : MonoBehaviour {
         collider.transform.rotation = transform.rotation;
         collider.transform.parent = transform;
         Destroy(collider);
+
+        if (dummy)
+        {
+            rb.velocity = rb.velocity * Game._dummyVelocity;
+            myCol.enabled = false;
+        }
     }
         
 }

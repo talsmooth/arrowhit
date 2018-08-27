@@ -339,6 +339,7 @@ MonoBehaviour:
   sp1: 0
   spl2: 0
   sp2: 0
+  myCol: {fileID: 65411313550131490}
 --- !u!114 &114338185382147390
 MonoBehaviour:
   m_ObjectHideFlags: 1

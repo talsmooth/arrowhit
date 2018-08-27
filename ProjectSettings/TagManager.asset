@@ -8,6 +8,7 @@ TagManager:
   - fruit
   - bomb
   - endOfRound
+  - dummy
   layers:
   - Default
   - TransparentFX

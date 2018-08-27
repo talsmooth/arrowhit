@@ -41,6 +41,8 @@ public class ArrowCollider : MonoBehaviour {
         random = Random.Range(0.1f, 0.2f);
     }
 
+    int y;     //delete this!!
+
     void FixedUpdate()
     {
 
@@ -56,11 +58,22 @@ public class ArrowCollider : MonoBehaviour {
 
             if (!slide)
             {
-                magnitude = transform.parent.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+                if (myFruit.tag == "dummy")
+                {
+                    myFruit.tag = "Untagged";
+                    delta = 1;
+                    random = 100;
+                    transform.localPosition = new Vector3(0,0,1);
+                    magnitude = 10;
+                }
+
+                magnitude += transform.parent.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
+
+                //Debug.Log(magnitude);
 
                 temp = magnitude / Game._fruitSlideSpeed;
 
-                delta = myFruit.transform.localPosition.z - transform.localPosition.z;
+                delta += myFruit.transform.localPosition.z - transform.localPosition.z;
 
                 cal = delta / temp;
 
@@ -80,6 +93,8 @@ public class ArrowCollider : MonoBehaviour {
             }
         }
     }
+
+
 
     void alignFruit ()
     {
@@ -116,7 +131,9 @@ public class ArrowCollider : MonoBehaviour {
         if (sliding > 0.001f && Mathf.Abs(myFruit.transform.localPosition.z - transform.localPosition.z) > random)
         {
             transform.parent.gameObject.GetComponent<Rigidbody>().velocity *= friction;
+            Debug.Log("slide");
             myFruit.transform.localPosition = new Vector3 (0, myFruit.transform.localPosition.y, myFruit.transform.localPosition.z - sliding);
+           
         }
         else
         {

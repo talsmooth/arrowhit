@@ -42,18 +42,6 @@ public class Game : MonoBehaviour {
 
     public float arrVelocityFruit;
 
-    //public float camMaxSpeed;
-
-    public static float _camMaxSpeed;
-
-    //public float camEase;
-
-    public static float _camIncreasingSpeed;
-
-    //public float camIncreasingSpeed;
-
-    public static float _camEase;
-
     public GameObject trainer;
 
     public GameObject text3d;
@@ -76,11 +64,7 @@ public class Game : MonoBehaviour {
 
     GameObject prefab; 
 
-    public static int hits = 0;
-
     public static int arrows;
-
-    public static int money = 0;
 
     public GUIStyle style;
 
@@ -92,9 +76,16 @@ public class Game : MonoBehaviour {
 
     public float time;
 
+    public float dummyVelocity;
+
+    public static float _dummyVelocity;
+
     // Use this for initialization
     void Start () 
     {
+
+        _dummyVelocity = (100 - dummyVelocity) /100;
+
         text3D = text3d;
 
         text3D = GameObject.Find("guiText");
@@ -113,10 +104,6 @@ public class Game : MonoBehaviour {
 
         gameOver = false;
 
-        hits = 0;
-
-        money = 0;
-
         l = levelNumber - 1;
 
         Player.nextHeight = 2.52f;
@@ -132,17 +119,6 @@ public class Game : MonoBehaviour {
         Player.climb = false;
 
         Player.turn = false;
-
-        ///////////////////////////////
-
-        _camIncreasingSpeed = 15;     //100 - camIncreasingSpeed; 
-
-        _camEase = 0.013f;                 //camEase;
-
-        _camMaxSpeed = 0.037f;               //camMaxSpeed;
-
-
-        ////////////////////////////
 
         _arrowForce = arrowForce;
 
@@ -173,9 +149,7 @@ public class Game : MonoBehaviour {
 
             yield return StartCoroutine(Climbing());
 
-            l = l + 1;  
-
-            hits = 0;         
+            l = l + 1;         
         }
     }
 
@@ -216,7 +190,7 @@ public class Game : MonoBehaviour {
             
         for (int f = s; f < e; f++)
         {
-            if (levels[l].fruits[f].tag == "fruit" || levels[l].fruits[f].tag == "bomb")
+            if (levels[l].fruits[f].tag == "fruit" || levels[l].fruits[f].tag == "bomb" || levels[l].fruits[f].tag == "dummy")
             {
                 yield return StartCoroutine(Frames(levels[l].fruitDelaysInFrames[f]));
                 prefab = Instantiate(levels[l].fruits[f], new Vector3 (trainer.transform.position.x, trainer.transform.position.y, 0), Quaternion.identity);
@@ -314,32 +288,10 @@ public class Game : MonoBehaviour {
         Trainer.climb = true;
         Trainer.turn = true;
         Cam.climb = true;
-        if (levelNumber % 2 == 1)
-        {
-            if (l % 2 == 0)
-            {
-                Player.nextHeight += floorDelta;
-                Trainer.nextHeight += floorDelta;
-            }
-            else
-            {
-                Player.nextHeight += floorDelta;
-                Trainer.nextHeight += floorDelta;
-            }
-        }
-        else
-        {
-            if (l % 2 == 0)
-            {
-                Player.nextHeight += floorDelta;
-                Trainer.nextHeight += floorDelta;
-            }
-            else
-            {
-                Player.nextHeight += floorDelta;
-                Trainer.nextHeight += floorDelta;
-            }
-        }
+
+        Player.nextHeight += floorDelta;
+        Trainer.nextHeight += floorDelta;
+   
 
         while (Cam.climb)
         {
