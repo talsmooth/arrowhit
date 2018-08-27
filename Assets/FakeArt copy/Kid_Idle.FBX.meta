@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 07a691e140e2f445f9c664969000a427
+timeCreated: 1534900826
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box019
+    100002: //RootNode
+    100004: Trainer00
+    100006: Trainer01
+    100008: Trainer02
+    100010: Trainer03
+    100012: Trainer04
+    100014: Trainer05
+    100016: Trainer06
+    100018: Trainer07
+    100020: Trainer08
+    100022: Trainer09
+    100024: Trainer10
+    100026: Trainer11
+    100028: Trainer12
+    100030: Trainer13
+    100032: Trainer14
+    100034: Trainer15
+    100036: Trainer16
+    100038: Trainer17
+    100040: Trainer18
+    100042: Trainer19
+    100044: Trainer20
+    100046: Trainer21
+    100048: Trainer22
+    100050: Trainer23
+    100052: Trainer24
+    100054: Trainer25
+    100056: Trainer26
+    100058: Trainer27
+    100060: Trainer28
+    100062: Trainer29
+    100064: Trainer30
+    100066: Trainer31
+    100068: Trainer32
+    100070: Trainer33
+    100072: Trainer34
+    100074: Trainer35
+    100076: Trainer36
+    100078: Trainer37
+    100080: Trainer38
+    100082: Trainer39
+    100084: Trainer40
+    100086: Trainer41
+    100088: Trainer42
+    100090: Trainer43
+    100092: Trainer44
+    100094: Trainer45
+    400000: Box019
+    400002: //RootNode
+    400004: Trainer00
+    400006: Trainer01
+    400008: Trainer02
+    400010: Trainer03
+    400012: Trainer04
+    400014: Trainer05
+    400016: Trainer06
+    400018: Trainer07
+    400020: Trainer08
+    400022: Trainer09
+    400024: Trainer10
+    400026: Trainer11
+    400028: Trainer12
+    400030: Trainer13
+    400032: Trainer14
+    400034: Trainer15
+    400036: Trainer16
+    400038: Trainer17
+    400040: Trainer18
+    400042: Trainer19
+    400044: Trainer20
+    400046: Trainer21
+    400048: Trainer22
+    400050: Trainer23
+    400052: Trainer24
+    400054: Trainer25
+    400056: Trainer26
+    400058: Trainer27
+    400060: Trainer28
+    400062: Trainer29
+    400064: Trainer30
+    400066: Trainer31
+    400068: Trainer32
+    400070: Trainer33
+    400072: Trainer34
+    400074: Trainer35
+    400076: Trainer36
+    400078: Trainer37
+    400080: Trainer38
+    400082: Trainer39
+    400084: Trainer40
+    400086: Trainer41
+    400088: Trainer42
+    400090: Trainer43
+    400092: Trainer44
+    400094: Trainer45
+    2100000: 'Material #44'
+    2100002: 20 - Default
+    2100004: 'Material #334'
+    2100006: No Name
+    2300000: Trainer00
+    2300002: Trainer01
+    2300004: Trainer02
+    2300006: Trainer03
+    2300008: Trainer04
+    2300010: Trainer05
+    2300012: Trainer06
+    2300014: Trainer07
+    2300016: Trainer08
+    2300018: Trainer09
+    2300020: Trainer25
+    2300022: Trainer26
+    2300024: Trainer27
+    2300026: Trainer28
+    2300028: Trainer29
+    2300030: Trainer30
+    2300032: Trainer31
+    2300034: Trainer32
+    2300036: Trainer33
+    2300038: Trainer34
+    3300000: Trainer00
+    3300002: Trainer01
+    3300004: Trainer02
+    3300006: Trainer03
+    3300008: Trainer04
+    3300010: Trainer05
+    3300012: Trainer06
+    3300014: Trainer07
+    3300016: Trainer08
+    3300018: Trainer09
+    3300020: Trainer25
+    3300022: Trainer26
+    3300024: Trainer27
+    3300026: Trainer28
+    3300028: Trainer29
+    3300030: Trainer30
+    3300032: Trainer31
+    3300034: Trainer32
+    3300036: Trainer33
+    3300038: Trainer34
+    4300000: Box019
+    4300002: Trainer00
+    4300004: Trainer01
+    4300006: Trainer02
+    4300008: Trainer03
+    4300010: Trainer04
+    4300012: Trainer05
+    4300014: Trainer06
+    4300016: Trainer07
+    4300018: Trainer08
+    4300020: Trainer09
+    4300022: Trainer25
+    4300024: Trainer26
+    4300026: Trainer27
+    4300028: Trainer28
+    4300030: Trainer29
+    4300032: Trainer30
+    4300034: Trainer31
+    4300036: Trainer32
+    4300038: Trainer33
+    4300040: Trainer34
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box019
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: f79b749dff8564a7dbf11082c6e030fc
+timeCreated: 1534947068
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: kid001LDigit21
+    100002: kid001LDigit22
+    100004: trainer
+    100006: //RootNode
+    100008: Trainer_Rig00
+    100010: Trainer_Rig01
+    100012: Trainer_Rig04
+    100014: Trainer_Rig05
+    100016: Trainer_Rig06
+    100018: Trainer_Rig07
+    100020: Trainer_Rig08
+    100022: Trainer_Rig09
+    100024: Trainer_Rig10
+    100026: Trainer_Rig11
+    100028: Trainer_Rig12
+    100030: Trainer_Rig13
+    100032: Trainer_Rig14
+    100034: Trainer_Rig15
+    100036: Trainer_Rig16
+    100038: Trainer_Rig17
+    100040: Trainer_Rig18
+    100042: Trainer_Rig19
+    100044: Trainer_Rig20
+    100046: Trainer_Rig21
+    100048: Trainer_Rig22
+    100050: Trainer_Rig23
+    100052: Trainer_Rig24
+    100054: Trainer_Rig25
+    100056: Trainer_Rig26
+    100058: Trainer_Rig27
+    100060: Trainer_Rig28
+    100062: Trainer_Rig29
+    100064: Trainer_Rig30
+    100066: Trainer_Rig31
+    100068: Trainer_Rig32
+    100070: Trainer_Rig33
+    100072: Trainer_Rig34
+    100074: Trainer_Rig35
+    100076: Trainer_Rig36
+    100078: Trainer_Rig37
+    100080: Trainer_Rig38
+    100082: Trainer_Rig39
+    100084: Trainer_Rig40
+    100086: Trainer_Rig41
+    100088: Trainer_Rig42
+    100090: Trainer_Rig43
+    100092: Trainer_Rig44
+    100094: Trainer_Rig45
+    400000: kid001LDigit21
+    400002: kid001LDigit22
+    400004: trainer
+    400006: //RootNode
+    400008: Trainer_Rig00
+    400010: Trainer_Rig01
+    400012: Trainer_Rig04
+    400014: Trainer_Rig05
+    400016: Trainer_Rig06
+    400018: Trainer_Rig07
+    400020: Trainer_Rig08
+    400022: Trainer_Rig09
+    400024: Trainer_Rig10
+    400026: Trainer_Rig11
+    400028: Trainer_Rig12
+    400030: Trainer_Rig13
+    400032: Trainer_Rig14
+    400034: Trainer_Rig15
+    400036: Trainer_Rig16
+    400038: Trainer_Rig17
+    400040: Trainer_Rig18
+    400042: Trainer_Rig19
+    400044: Trainer_Rig20
+    400046: Trainer_Rig21
+    400048: Trainer_Rig22
+    400050: Trainer_Rig23
+    400052: Trainer_Rig24
+    400054: Trainer_Rig25
+    400056: Trainer_Rig26
+    400058: Trainer_Rig27
+    400060: Trainer_Rig28
+    400062: Trainer_Rig29
+    400064: Trainer_Rig30
+    400066: Trainer_Rig31
+    400068: Trainer_Rig32
+    400070: Trainer_Rig33
+    400072: Trainer_Rig34
+    400074: Trainer_Rig35
+    400076: Trainer_Rig36
+    400078: Trainer_Rig37
+    400080: Trainer_Rig38
+    400082: Trainer_Rig39
+    400084: Trainer_Rig40
+    400086: Trainer_Rig41
+    400088: Trainer_Rig42
+    400090: Trainer_Rig43
+    400092: Trainer_Rig44
+    400094: Trainer_Rig45
+    2100000: 20 - Default
+    2100002: 'Material #44'
+    2100004: 'Material #334'
+    4300000: trainer
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: trainer
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

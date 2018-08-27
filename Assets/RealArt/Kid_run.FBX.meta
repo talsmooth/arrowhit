@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 4aa16ce647dfe48fa979eb3a51753ab5
+timeCreated: 1534947066
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Kid
+    100002: Kid_Rig01
+    100004: Kid_Rig02
+    100006: Kid_Rig03
+    100008: Kid_Rig04
+    100010: Kid_Rig05
+    100012: Kid_Rig06
+    100014: Kid_Rig07
+    100016: Kid_Rig08
+    100018: Kid_Rig09
+    100020: Kid_Rig10
+    100022: Kid_Rig11
+    100024: Kid_Rig12
+    100026: Kid_Rig13
+    100028: Kid_Rig14
+    100030: Kid_Rig15
+    100032: Kid_Rig16
+    100034: Kid_Rig17
+    100036: Kid_Rig18
+    100038: Kid_Rig19
+    100040: Kid_Rig20
+    100042: Kid_Rig21
+    100044: Kid_Rig22
+    100046: Kid_Rig23
+    100048: Kid_Rig24
+    100050: Kid_Rig25
+    100052: Kid_Rig26
+    100054: Kid_Rig27
+    100056: Kid_Rig28
+    100058: Kid_Rig29
+    100060: Kid_Rig30
+    100062: Kid_Rig31
+    100064: Kid_Rig32
+    100066: Kid_Rig33
+    100068: Kid_Rig34
+    100070: Kid_Rig35
+    100072: Kid_Rig36
+    100074: Kid_Rig37
+    100076: Kid_Rig38
+    100078: Kid_Rig39
+    100080: Kid_Rig40
+    100082: Kid_Rig41
+    100084: Kid_Rig42
+    100086: Kid_Rig43
+    100088: Kid_Rig44
+    100090: Kid_Rig45
+    100092: Kid_Rig46
+    100094: //RootNode
+    400000: Kid
+    400002: Kid_Rig01
+    400004: Kid_Rig02
+    400006: Kid_Rig03
+    400008: Kid_Rig04
+    400010: Kid_Rig05
+    400012: Kid_Rig06
+    400014: Kid_Rig07
+    400016: Kid_Rig08
+    400018: Kid_Rig09
+    400020: Kid_Rig10
+    400022: Kid_Rig11
+    400024: Kid_Rig12
+    400026: Kid_Rig13
+    400028: Kid_Rig14
+    400030: Kid_Rig15
+    400032: Kid_Rig16
+    400034: Kid_Rig17
+    400036: Kid_Rig18
+    400038: Kid_Rig19
+    400040: Kid_Rig20
+    400042: Kid_Rig21
+    400044: Kid_Rig22
+    400046: Kid_Rig23
+    400048: Kid_Rig24
+    400050: Kid_Rig25
+    400052: Kid_Rig26
+    400054: Kid_Rig27
+    400056: Kid_Rig28
+    400058: Kid_Rig29
+    400060: Kid_Rig30
+    400062: Kid_Rig31
+    400064: Kid_Rig32
+    400066: Kid_Rig33
+    400068: Kid_Rig34
+    400070: Kid_Rig35
+    400072: Kid_Rig36
+    400074: Kid_Rig37
+    400076: Kid_Rig38
+    400078: Kid_Rig39
+    400080: Kid_Rig40
+    400082: Kid_Rig41
+    400084: Kid_Rig42
+    400086: Kid_Rig43
+    400088: Kid_Rig44
+    400090: Kid_Rig45
+    400092: Kid_Rig46
+    400094: //RootNode
+    2100000: 'Material #44'
+    2100002: 20 - Default
+    2100004: 'Material #334'
+    4300000: Kid
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Kid
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
