@@ -92,7 +92,6 @@ public class Cam : MonoBehaviour {
 
                 //if (delta > 0.001)
                 //{
-                  //  Debug.Log("now");
                     //transform.position = new Vector3(transform.position.x, transform.position.y - 0.0005f, transform.position.z);
                // }
                 //else
@@ -102,7 +101,6 @@ public class Cam : MonoBehaviour {
                         afterMax = false;
                         transform.position = new Vector3(transform.position.x, player.transform.position.y + oriDelta, transform.position.z);
                         _startEase = startEase;
-                        Debug.Log("now");
                         climb = false;
                     }
                 //}

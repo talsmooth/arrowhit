@@ -125,7 +125,7 @@ public class Trainer : MonoBehaviour {
 
                 if (transform.rotation.eulerAngles.y < 90)
                 {
-                    transform.Rotate(0, 4.778f, 0);  
+                    transform.Rotate(0, 9.458f, 0);  
                     Vector3 dir = des - transform.position;
                     transform.Translate(dir.x, dir.y, dir.z, Space.World);
                 }

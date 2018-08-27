@@ -62,8 +62,6 @@ public class ArrowCollider : MonoBehaviour {
 
                 delta = myFruit.transform.localPosition.z - transform.localPosition.z;
 
-                //transform.parent.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
                 cal = delta / temp;
 
                 per = ((cal / 4) / (Game._arrVelocityFruit / 2)) / 100;
@@ -127,11 +125,11 @@ public class ArrowCollider : MonoBehaviour {
             
         if (myFruit.transform.localPosition.y > 0.07)
         {
-            myFruit.transform.Translate(0, -sliding * 0.55f, 0);
+            myFruit.transform.Translate(0, -sliding * 0.75f, 0);
         }
         else if (myFruit.transform.localPosition.y < -0.07)
         {
-            myFruit.transform.Translate(0, sliding * 0.55f, 0);
+            myFruit.transform.Translate(0, sliding * 0.75f, 0);
         }
         else
         {

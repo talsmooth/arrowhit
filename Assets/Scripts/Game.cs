@@ -299,8 +299,6 @@ public class Game : MonoBehaviour {
 
         while (!textB)
         {
-            countC++;
-            Debug.Log(countC);
             text3D.transform.Translate(0,2.5f * Time.deltaTime ,0);
             if (text3D.transform.position.y > textY + height)
             {
@@ -309,8 +307,6 @@ public class Game : MonoBehaviour {
             }
         }
     }
-
-    public static int countC;
 
     IEnumerator Climbing ()
     {
@@ -369,11 +365,7 @@ public class Game : MonoBehaviour {
     void OnGUI()
     {
 
-        //GUI.Label(new Rect(Screen.width-120, 10, 100, 20), "HITS: " + hits, style);
-
-        //GUI.Label(new Rect(Screen.width-120, 40, 100, 20), "MONEY: " + money, style);
-
-        GUI.Label(new Rect(Screen.width-130, 70, 100, 20), "ARROWS: " + arrows, style);
+        GUI.Label(new Rect(Screen.width-300, 20, 100, 20), "ARROWS: " + arrows, style);
 
 
         if (GUI.Button(new Rect(2, 10, 120, 80), "Restart"))
