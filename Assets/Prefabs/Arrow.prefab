@@ -332,7 +332,7 @@ MonoBehaviour:
   shoot: 0
   startVel: 0
   help: {fileID: 1569442692776196}
-  splash: {fileID: 1875933314480622, guid: 778936046b0d64685a1f9dd7dde17ad6, type: 2}
+  splash: {fileID: 194016, guid: 263867d4955e3644f9a1dfa779ab7d1e, type: 2}
   splash1: {fileID: 0}
   splash2: {fileID: 0}
   spl1: 0
