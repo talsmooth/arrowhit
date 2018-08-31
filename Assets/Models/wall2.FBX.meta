@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 0402b2e375c38de43978661bf0ce9700
+timeCreated: 1535673910
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box019
+    100002: Box056
+    100004: Box057
+    100006: Box058
+    100008: C-Ext009
+    100010: C-Ext010
+    100012: Cylinder019
+    100014: Group006
+    100016: Group007
+    100018: Rectangle029
+    100020: Rectangle030
+    100022: Rectangle033
+    100024: Rectangle034
+    100026: Rectangle035
+    100028: Rectangle039
+    100030: Rectangle041
+    100032: Rectangle042
+    100034: Tube001
+    100036: Tube002
+    100038: //RootNode
+    400000: Box019
+    400002: Box056
+    400004: Box057
+    400006: Box058
+    400008: C-Ext009
+    400010: C-Ext010
+    400012: Cylinder019
+    400014: Group006
+    400016: Group007
+    400018: Rectangle029
+    400020: Rectangle030
+    400022: Rectangle033
+    400024: Rectangle034
+    400026: Rectangle035
+    400028: Rectangle039
+    400030: Rectangle041
+    400032: Rectangle042
+    400034: Tube001
+    400036: Tube002
+    400038: //RootNode
+    2100000: 'Material #42'
+    2100002: 'Material #29'
+    2100004: 'Material #30'
+    2300000: Box019
+    2300002: Box056
+    2300004: Box057
+    2300006: Box058
+    2300008: C-Ext009
+    2300010: C-Ext010
+    2300012: Cylinder019
+    2300014: Rectangle029
+    2300016: Rectangle030
+    2300018: Rectangle033
+    2300020: Rectangle034
+    2300022: Rectangle035
+    2300024: Rectangle039
+    2300026: Rectangle041
+    2300028: Rectangle042
+    2300030: Tube001
+    2300032: Tube002
+    3300000: Box019
+    3300002: Box056
+    3300004: Box057
+    3300006: Box058
+    3300008: C-Ext009
+    3300010: C-Ext010
+    3300012: Cylinder019
+    3300014: Rectangle029
+    3300016: Rectangle030
+    3300018: Rectangle033
+    3300020: Rectangle034
+    3300022: Rectangle035
+    3300024: Rectangle039
+    3300026: Rectangle041
+    3300028: Rectangle042
+    3300030: Tube001
+    3300032: Tube002
+    4300000: Box019
+    4300002: Box056
+    4300004: Box057
+    4300006: Box058
+    4300008: C-Ext009
+    4300010: C-Ext010
+    4300012: Rectangle030
+    4300014: Rectangle033
+    4300016: Rectangle039
+    4300018: Rectangle035
+    4300020: Tube002
+    4300022: Rectangle042
+    4300024: Tube001
+    4300026: Cylinder019
+    4300028: Rectangle041
+    4300030: Rectangle029
+    4300032: Rectangle034
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #30'
+    second: {fileID: 2100000, guid: 9b9a616f23cbd9d4b87079bbfe916f82, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
