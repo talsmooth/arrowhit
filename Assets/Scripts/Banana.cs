@@ -53,6 +53,7 @@ public class Banana : MonoBehaviour {
     // Use this for initialization
     void Start () 
     {
+        AudioManager._banana.Play();
         rb.velocity = new Vector3(x, y, 0);
         ran = Random.Range(3.22f, 4.62f);
         rb.AddTorque(rotate);
@@ -66,7 +67,7 @@ public class Banana : MonoBehaviour {
         }
         if (Time.timeScale > 0)
         {
-            //Instantiate(cube, transform.position, Quaternion.identity);
+            Instantiate(cube, transform.position, Quaternion.identity);
         }
     }
     // Update is called once per frame
@@ -74,6 +75,7 @@ public class Banana : MonoBehaviour {
     {
         if (pos.x < -14)
         {
+            AudioManager._banana.Stop();
             Destroy(gameObject);
         }
 

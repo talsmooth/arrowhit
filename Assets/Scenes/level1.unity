@@ -412,10 +412,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec558bff44ba4b2bbda7fac095e3c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGroundMusics: 0
   music: {fileID: 158391118}
   sound: {fileID: 158391117}
   banana: {fileID: 158391119}
-  backGroundMusic: {fileID: 8300000, guid: 7dac74b7a502a45a9b1b98e6b2296797, type: 3}
+  backGroundMusic: {fileID: 8300000, guid: 48b296573d86f47a1a9dd9cb5934a799, type: 3}
   bananaFlight: {fileID: 8300000, guid: 7dac74b7a502a45a9b1b98e6b2296797, type: 3}
   shooting: {fileID: 8300000, guid: 7dac74b7a502a45a9b1b98e6b2296797, type: 3}
   hitFruit: {fileID: 8300000, guid: 7dac74b7a502a45a9b1b98e6b2296797, type: 3}
@@ -446,7 +447,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -526,7 +527,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.216
   m_Pitch: 1
   Loop: 1
@@ -606,7 +607,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1125,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 960950413}
+  - {fileID: 1029683779}
   - {fileID: 960950413}
   - {fileID: 960950413}
   - {fileID: 960950413}
