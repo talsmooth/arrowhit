@@ -55,8 +55,11 @@ public class Banana : MonoBehaviour {
     // Use this for initialization
     void Start () 
     {
-        bananaAudio.clip = AudioManager._bananaFlight;
-        bananaAudio.Play();
+        if (!AudioManager._soundMute)
+        {
+            bananaAudio.clip = AudioManager._bananaFlight;
+            bananaAudio.Play();
+        }
         rb.velocity = new Vector3(x, y, 0);
         ran = Random.Range(3.22f, 4.62f);
         rb.AddTorque(rotate);
