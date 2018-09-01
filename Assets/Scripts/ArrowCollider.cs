@@ -104,7 +104,7 @@ public class ArrowCollider : MonoBehaviour {
         {
             if (counter == 3)
             {
-                transform.parent.gameObject.GetComponent<Arrow>().spl2 = true;
+                //transform.parent.gameObject.GetComponent<Arrow>().spl2 = true;
             }
             sliding = (delta / 2) / (cal / 4);
             friction = 1 - (((Game._arrVelocityFruit / 2) / (cal / 4)) / 100);
@@ -131,7 +131,6 @@ public class ArrowCollider : MonoBehaviour {
         if (sliding > 0.001f && Mathf.Abs(myFruit.transform.localPosition.z - transform.localPosition.z) > random)
         {
             transform.parent.gameObject.GetComponent<Rigidbody>().velocity *= friction;
-            Debug.Log("slide");
             myFruit.transform.localPosition = new Vector3 (0, myFruit.transform.localPosition.y, myFruit.transform.localPosition.z - sliding);
            
         }

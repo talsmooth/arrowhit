@@ -131,7 +131,12 @@ public class Game : MonoBehaviour {
 
     void Update () 
     {
-        Time.timeScale = time;
+        //Time.timeScale = time;
+
+        if (Input.GetMouseButton(0))
+        {
+            Time.timeScale = 1;
+        }
     }
 
 
@@ -190,21 +195,26 @@ public class Game : MonoBehaviour {
             
         for (int f = s; f < e; f++)
         {
-            if (levels[l].fruits[f].tag == "fruit" || levels[l].fruits[f].tag == "bomb" || levels[l].fruits[f].tag == "dummy")
+            
+            yield return StartCoroutine(Frames(levels[l].fruitDelaysInFrames[f]));
+            AudioManager._sound.clip = AudioManager._trainerThrow;
+            AudioManager._sound.Play();
+            prefab = Instantiate(levels[l].fruits[f], new Vector3 (trainer.transform.position.x, trainer.transform.position.y, 0), Quaternion.identity);
+            prefab.transform.localScale = Vector3.Scale(prefab.transform.localScale, new Vector3 (fruitSize, fruitSize, fruitSize));
+            prefab.GetComponent<Rigidbody>().AddForce(levels[l].fruitVelocity[f]);
+            if (levels[l].fruits[f].tag != "banana" && levels[l].fruits[f].tag != "arrowBomb")
             {
-                yield return StartCoroutine(Frames(levels[l].fruitDelaysInFrames[f]));
-                prefab = Instantiate(levels[l].fruits[f], new Vector3 (trainer.transform.position.x, trainer.transform.position.y, 0), Quaternion.identity);
-                prefab.transform.localScale = Vector3.Scale(prefab.transform.localScale, new Vector3 (fruitSize, fruitSize, fruitSize));
-                prefab.GetComponent<Rigidbody>().AddForce(levels[l].fruitVelocity[f]);
                 prefab.GetComponent<Rigidbody>().AddTorque(Random.Range(510, 740.0f), Random.Range(180f, 240.6f), Random.Range(270f, 390.6f));
-                Trainer.throwB = true;
             }
-            else if (levels[l].fruits[f].tag == "endOfRound")
-            {
-                yield return StartCoroutine(finishRound());
-                yield return new WaitForSeconds(levels[l].delayRoundInSeconds);
-                Text("Good Job!", 4);
-            }
+            Trainer.throwB = true;
+
+            //else if (levels[l].fruits[f].tag == "endOfRound")
+            //{
+            //    yield return StartCoroutine(finishRound());
+            //    yield return new WaitForSeconds(levels[l].delayRoundInSeconds);
+            //    Text("Good Job!", 4);
+            //}
+
             if (repeat && f+1 == e)
             {
                 yield return StartCoroutine(finishRound());
@@ -240,7 +250,7 @@ public class Game : MonoBehaviour {
         
     IEnumerator finishRound ()
     {
-        while (prefab != null && prefab.transform.position.y > -1 && prefab.transform.position.x < 11.5f)
+        while (prefab != null && prefab.transform.position.y > -1 && prefab.transform.position.x < 11.5f &&  prefab.transform.position.x > -7)
         {
             if (gameOver)
             {
@@ -317,7 +327,7 @@ public class Game : MonoBehaviour {
     void OnGUI()
     {
 
-        GUI.Label(new Rect(Screen.width-300, 20, 100, 20), "ARROWS: " + arrows, style);
+        //GUI.Label(new Rect(Screen.width-300, 20, 100, 20), "ARROWS: " + arrows, style);
 
 
         if (GUI.Button(new Rect(2, 10, 120, 80), "Restart"))

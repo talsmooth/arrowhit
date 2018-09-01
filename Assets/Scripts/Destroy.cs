@@ -16,7 +16,7 @@ public class Destroy : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "fruit" || collider.gameObject.tag == "bomb")
+        if (collider.gameObject.tag == "fruit" || collider.gameObject.tag == "bomb" || collider.gameObject.tag == "dummy")
         {
             Destroy(collider.gameObject);
         }

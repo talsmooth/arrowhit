@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 33684317858090094}
   - component: {fileID: 54978017291194304}
   - component: {fileID: 136936098173837960}
+  - component: {fileID: 114628207237169004}
   m_Layer: 0
   m_Name: apple_test
   m_TagString: fruit
@@ -84,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101994926046576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29297113, y: 10.559026, z: -13.196133}
+  m_LocalPosition: {x: 1.6979961, y: 7.3379145, z: -0.39568806}
   m_LocalScale: {x: 0.01117515, y: 0.01117514, z: 0.01117516}
   m_Children:
   - {fileID: 4133269483558532}
@@ -118,7 +119,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fb850b73aee934d43bb7254e2f741b0b, type: 2}
+  - {fileID: 2100000, guid: 17417797ae10e4328a53059d2bb2732c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -208,6 +209,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &114628207237169004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101994926046576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f95dd0ddcac64caf848772922a2f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 194016, guid: 263867d4955e3644f9a1dfa779ab7d1e, type: 2}
 --- !u!136 &136936098173837960
 CapsuleCollider:
   m_ObjectHideFlags: 1

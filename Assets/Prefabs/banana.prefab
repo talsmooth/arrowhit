@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4617536020270468}
   - component: {fileID: 136974908279639042}
   - component: {fileID: 54997038064391570}
+  - component: {fileID: 114600093854645170}
   m_Layer: 0
-  m_Name: Banana
+  m_Name: banana
   m_TagString: fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,6 +129,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &114600093854645170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1112127489368048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f95dd0ddcac64caf848772922a2f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
 --- !u!136 &136974908279639042
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4281864437824076}
   - component: {fileID: 33325474440308740}
   - component: {fileID: 54862115540961950}
-  - component: {fileID: 135902507077755786}
+  - component: {fileID: 136317723025956346}
+  - component: {fileID: 114484063809530490}
   m_Layer: 0
   m_Name: dummy
   m_TagString: dummy
@@ -67,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1762638867043408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.412035, y: 11.571634, z: 0.64774036}
   m_LocalScale: {x: 0.269129, y: 0.269129, z: 0.269129}
   m_Children:
   - {fileID: 4254531991467088}
@@ -155,8 +156,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!135 &135902507077755786
-SphereCollider:
+--- !u!114 &114484063809530490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1762638867043408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f95dd0ddcac64caf848772922a2f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
+--- !u!136 &136317723025956346
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -164,6 +177,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.6
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.34
+  m_Height: 2.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0.15}

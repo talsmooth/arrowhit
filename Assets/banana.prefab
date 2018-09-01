@@ -27,9 +27,10 @@ GameObject:
   - component: {fileID: 136639283224307158}
   - component: {fileID: 54776247215327476}
   - component: {fileID: 114612994988074650}
+  - component: {fileID: 114810325438637672}
   m_Layer: 0
   m_Name: banana
-  m_TagString: fruit
+  m_TagString: banana
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1051504743041436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.73, y: 5.93, z: 0}
+  m_LocalPosition: {x: 3.8637214, y: 5.598484, z: -5.713915}
   m_LocalScale: {x: 12.784702, y: 12.7846985, z: 12.7846985}
   m_Children:
   - {fileID: 4019903823659992}
@@ -163,16 +164,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 54776247215327476}
-  x: 5
+  x: 11
   y: 8
-  x0: 0
-  y0: 0
-  x1: 0
-  y1: 0
-  x2: 0
-  y2: 0
-  x3: 0
-  y3: 0
+  x0: 1.001
+  y0: 1.000001
+  x1: 0.94
+  y1: 0.9
+  x2: 0.89
+  y2: 1.12
+  x3: 1.03
+  y3: 0.8
+  x4: 1.1
+  y4: 0.92
+  x5: 1.04
+  y5: 0.92
+  x6: 1.001
+  y6: 0.92
+  rotate: {x: 0, y: 8000, z: 10000}
+  cube: {fileID: 1942521052808584, guid: 1eceba183723745ce8c8bd05baba8655, type: 2}
+--- !u!114 &114810325438637672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051504743041436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f95dd0ddcac64caf848772922a2f99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 0}
 --- !u!136 &136101398642793346
 CapsuleCollider:
   m_ObjectHideFlags: 1

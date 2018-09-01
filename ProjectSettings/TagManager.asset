@@ -9,6 +9,8 @@ TagManager:
   - bomb
   - endOfRound
   - dummy
+  - arrowBomb
+  - banana
   layers:
   - Default
   - TransparentFX
@@ -18,8 +20,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - arrow
+  - smallArrow
   - 
   - 
   - 
