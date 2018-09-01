@@ -173,7 +173,7 @@ public class Arrow : MonoBehaviour {
 
         if (collider.gameObject.tag == "banana")
         {
-            AudioManager._banana.Stop();
+            collider.gameObject.GetComponent<Banana>().bananaAudio.Stop();
             Destroy(collider.gameObject.GetComponent<Banana>());
         }
 

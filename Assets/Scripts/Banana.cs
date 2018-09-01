@@ -50,10 +50,13 @@ public class Banana : MonoBehaviour {
 
     public GameObject cube;
 
+    public AudioSource bananaAudio;
+
     // Use this for initialization
     void Start () 
     {
-        AudioManager._banana.Play();
+        bananaAudio.clip = AudioManager._bananaFlight;
+        bananaAudio.Play();
         rb.velocity = new Vector3(x, y, 0);
         ran = Random.Range(3.22f, 4.62f);
         rb.AddTorque(rotate);
@@ -75,7 +78,7 @@ public class Banana : MonoBehaviour {
     {
         if (pos.x < -14)
         {
-            AudioManager._banana.Stop();
+            bananaAudio.Stop();
             Destroy(gameObject);
         }
 
