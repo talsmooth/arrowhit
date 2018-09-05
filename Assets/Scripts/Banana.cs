@@ -1,58 +1,53 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
 public class Banana : MonoBehaviour {
+
+    public float boomerangDistance;
+
+    public float boomerangWidth;
+
+    [Range(1.0f, 10.0f)]
+    public float boomerangSeconds;
+
+    [Range(0.01f, 0.94f)]
+    public float percentageOfCircle;
+
+    [Range(0.0f, 0.013f)]
+    public float bananaEase;
+
+    float acc = 1.2f;
+
+    public bool drawPath;
+
+    public Vector3 bananaRotation;
+
+    float check = 1;
 
     public Rigidbody rb;
 
-    public float x;
-
-    public float y;
-
-    public float x0;
-
-    public float y0;
-
-    public float x1;
-
-    public float y1;
-
-    public float x2;
-
-    public float y2;
-
-    public float x3;
-
-    public float y3;
-
-    public float x4;
-
-    public float y4;
-
-    public float x5;
-
-    public float y5;
-
-    public float x6;
-
-    public float y6;
-
-    Vector3 pos;
-
-    float ran;
-
-    int state;
-
-    int count;
-
-    public Vector3 rotate;
-
     public GameObject cube;
+
+    bool stopAcc;
+
+    public Vector3 vel;
+
+    Vector3 qv;
+
+    public Collider[] cols = new Collider[0];
 
     public AudioSource bananaAudio;
 
-    // Use this for initialization
+    float posX;
+
+    Vector3 pos;
+
+    Vector3 temp;
+
+    Vector3 step;
+
+    bool stopCurve;
+
+
     void Start () 
     {
         if (!AudioManager._soundMute)
@@ -60,108 +55,107 @@ public class Banana : MonoBehaviour {
             bananaAudio.clip = AudioManager._bananaFlight;
             bananaAudio.Play();
         }
-        rb.velocity = new Vector3(x, y, 0);
-        ran = Random.Range(3.22f, 4.62f);
-        rb.AddTorque(rotate);
+           
+        pos = transform.position;
+        rb.maxAngularVelocity = 10;
+        rb.AddTorque(bananaRotation);
+        StartCoroutine(Throw(boomerangDistance, boomerangWidth, vel, boomerangSeconds));
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Time.timeScale = 1;
-        }
-        if (Time.timeScale > 0)
+        if (Time.timeScale > 0 && drawPath)
         {
             Instantiate(cube, transform.position, Quaternion.identity);
         }
-    }
-    // Update is called once per frame
-    void FixedUpdate () 
-    {
-        if (pos.x < -14)
+
+        posX = transform.position.x;
+
+        if (posX < -14)
         {
             bananaAudio.Stop();
             Destroy(gameObject);
         }
 
-        pos = transform.position;
+    }
 
-        if (pos.x > ran && state == 0)
+    void FixedUpdate()
+    {
+        rb.AddRelativeTorque((bananaRotation/5) / check);
+    }
+       
+    IEnumerator Throw(float dist, float width, Vector3 direction, float time) 
+    {
+        rb.useGravity = false;
+        rb.velocity = Vector3.zero;
+        Quaternion q = Quaternion.FromToRotation (Vector3.right, direction); 
+        float timer = 0.0f;
+        float timeT = time;
+
+
+        while (timer < timeT) 
         {
-            state = 1;
-            Debug.Log(state);
+            float t = (Mathf.PI * 2.0f * ((timer / time) * check) - Mathf.PI/2.0f);
+            timeT = time / check;
+            float x = width * Mathf.Cos(t);
+            float z = dist * Mathf.Sin(t);
+            Vector3 v = new Vector3(z + dist, x, 0); 
+            if (!stopCurve)
+            {
+                qv = q * v;
+                step = pos + qv - temp;
+            }
+
+            if (stopCurve)
+            {
+                qv = qv + step;
+                timer = 0.0f;
+            } 
+
+            if ((timer / time) > 0.3f && step.x >= 0)
+            {
+                check -= bananaEase;
+            }
+            else if (!stopAcc)
+            {
+                check += (bananaEase * 0.85f);
+                if (check > 1)
+                {
+                    check = 1;
+                    stopAcc = true;
+                }
+            }
+                
+            rb.MovePosition(pos + qv);
+
+            timer += Time.deltaTime;
+
+            if ((timer / timeT) > 0.8)
+            {
+                check += (10 - boomerangSeconds) / (4500 - (percentageOfCircle * 4000));
+            }
+
+            if ((timer / timeT) > percentageOfCircle && !stopCurve)
+            {
+                stopCurve = true;
+
+                if (percentageOfCircle > 0.86f && percentageOfCircle < 0.92f)
+                {
+                    step = step * (percentageOfCircle * acc);
+                }
+
+                else if (percentageOfCircle > 0.91f)
+                {
+                    step = step * (percentageOfCircle * (acc + 0.5f));
+                }
+            }
+
+            else if (!stopCurve)
+            {
+                temp = pos + qv; 
+            }
+            yield return null;
         }
-
-        else if (rb.velocity.x < 1.2f && state == 1)
-        {
-            //Time.timeScale = 0;
-            state = 2;
-            Debug.Log(state);
-        }
-
-        else if (state == 2 && count > 5)
-        {
-            //Time.timeScale = 0;
-            rb.velocity = new Vector3 (-rb.velocity.x, rb.velocity.y, 0);
-            state = 3;
-            Debug.Log(state);
-        }
-
-        else if (state == 3 && count > 10) 
-        {
-            //Time.timeScale = 0;
-            state = 4;
-            Debug.Log(state);
-        }
-
-        else if (state == 4 && rb.velocity.x < -4)
-        {
-            //Time.timeScale = 0;
-            state = 5;
-            Debug.Log(state);
-        }
-
-        else if (state == 5 && rb.velocity.x < -8)
-        {
-            //Time.timeScale = 0;
-            state = 6;
-            Debug.Log(state);
-        }
-
-        switch (state)
-        {
-            case 0:
-
-                rb.velocity = new Vector3(rb.velocity.x * x0, rb.velocity.y * y0, 0);
-                break;
-
-            case 1:
-                rb.velocity = new Vector3(rb.velocity.x * x1, rb.velocity.y * y1, 0);
-                break;
-
-            case 2:
-                count ++;
-                rb.velocity = new Vector3(rb.velocity.x * x2, rb.velocity.y * y2, 0);
-                break;
-
-            case 3:
-                count ++;
-                rb.velocity = new Vector3(rb.velocity.x * x3, rb.velocity.y * y3, 0);
-                break;
-
-            case 4:
-                rb.velocity = new Vector3(rb.velocity.x * x4, rb.velocity.y * y4, 0);
-                break;
-
-            case 5:
-                rb.velocity = new Vector3(rb.velocity.x * x5, rb.velocity.y * y5, 0);
-                break;
-
-            case 6:
-                rb.velocity = new Vector3(rb.velocity.x * x6, rb.velocity.y * y6, 0);
-                break;
-        }
-
+            
     }
 }

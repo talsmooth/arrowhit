@@ -69,8 +69,6 @@ public class ArrowCollider : MonoBehaviour {
 
                 magnitude += transform.parent.gameObject.GetComponent<Rigidbody>().velocity.magnitude;
 
-                //Debug.Log(magnitude);
-
                 temp = magnitude / Game._fruitSlideSpeed;
 
                 delta += myFruit.transform.localPosition.z - transform.localPosition.z;

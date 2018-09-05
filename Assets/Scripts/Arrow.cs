@@ -175,6 +175,11 @@ public class Arrow : MonoBehaviour {
         {
             collider.gameObject.GetComponent<Banana>().bananaAudio.Stop();
             Destroy(collider.gameObject.GetComponent<Banana>());
+
+            for (int i = 0; i < collider.gameObject.GetComponent<Banana>().cols.Length; i++)
+            {
+                collider.gameObject.GetComponent<Banana>().cols[i].enabled = false;
+            }
         }
 
         col.GetComponent<ArrowCollider>().myFruit = collider.gameObject;

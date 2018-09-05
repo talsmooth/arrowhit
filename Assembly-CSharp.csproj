@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6BA54E51-AE69-F5AB-E1A3-F1B2EA04E8F9}</ProjectGuid>
+    <ProjectGuid>{42F66C1F-F372-FB96-A71F-D22BEEAF55DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Arrow.cs" />
      <Compile Include="Assets\Scripts\ArrowBomb.cs" />
      <Compile Include="Assets\Scripts\ArrowCollider.cs" />
+     <Compile Include="Assets\Scripts\ArrowLauncher.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Banana.cs" />
      <Compile Include="Assets\Scripts\Cam.cs" />
