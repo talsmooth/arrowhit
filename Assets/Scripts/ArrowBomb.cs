@@ -35,7 +35,7 @@ public class ArrowBomb : MonoBehaviour {
 
             rend = gameObject.GetComponent<MeshRenderer>();
 
-            //rend.enabled = false;
+            rend.enabled = false;
 
             col = gameObject.GetComponent<Collider>();
 

@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noOfArrows: 12
-  framesForLaunch: 12
+  secondsForLaunch: 0.5
   howManyFramesKeepFalling: 18
   small: {fileID: 1748552263191136, guid: f9607cdd27ec849e3b60e4353a2e3cb9, type: 2}
   bomb: {fileID: 0}

@@ -244,7 +244,7 @@ MonoBehaviour:
   boomerangWidth: 1
   boomerangSeconds: 4
   percentageOfCircle: 0.9
-  bananaEase: 0.05
+  bananaEase: 0.002
   drawPath: 1
   check: 1.5
   rb: {fileID: 54073173763135982}

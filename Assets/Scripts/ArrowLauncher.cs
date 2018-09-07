@@ -6,7 +6,7 @@ public class ArrowLauncher : MonoBehaviour {
 
     public int noOfArrows;
 
-    public int framesForLaunch;
+    public float secondsForLaunch;
 
     public int howManyFramesKeepFalling;
 
@@ -54,7 +54,7 @@ public class ArrowLauncher : MonoBehaviour {
             {
                 Instantiate(small, transform.position, Quaternion.Euler(angle,90,0));  
                 angle = angle + (360 / noOfArrows);
-                yield return StartCoroutine(Frames(framesForLaunch/noOfArrows));
+                yield return new WaitForSeconds(secondsForLaunch/noOfArrows);
             }   
 
             break; 
