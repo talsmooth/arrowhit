@@ -11,6 +11,7 @@ TagManager:
   - dummy
   - arrowBomb
   - banana
+  - grapes
   layers:
   - Default
   - TransparentFX

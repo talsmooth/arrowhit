@@ -209,6 +209,7 @@ public class Game : MonoBehaviour {
             {
                 prefab.GetComponent<Rigidbody>().AddForce(levels[l].fruitVelocity[f]);
                 prefab.GetComponent<Rigidbody>().AddTorque(0, 0, Random.Range(270f, 390.6f));
+                prefab.transform.rotation = Quaternion.Euler(-90, 180, 0);
             }
             else
             {

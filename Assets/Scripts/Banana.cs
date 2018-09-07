@@ -2,6 +2,10 @@
 using System.Collections;
 public class Banana : MonoBehaviour {
 
+    public Vector3 bananaAngle;
+
+    public Vector3 bananaRotation;
+
     public float boomerangDistance;
 
     public float boomerangWidth;
@@ -12,16 +16,14 @@ public class Banana : MonoBehaviour {
     [Range(0.01f, 0.94f)]
     public float percentageOfCircle;
 
-    [Range(0.0f, 0.013f)]
+    [Range(0.0001f, 0.050f)]
     public float bananaEase;
 
     float acc = 1.2f;
 
     public bool drawPath;
 
-    public Vector3 bananaRotation;
-
-    float check = 1;
+    public float check = 1;
 
     public Rigidbody rb;
 
@@ -56,9 +58,9 @@ public class Banana : MonoBehaviour {
             bananaAudio.Play();
         }
            
+        transform.rotation = Quaternion.Euler(bananaAngle);
         pos = transform.position;
         rb.maxAngularVelocity = 10;
-        rb.AddTorque(bananaRotation);
         StartCoroutine(Throw(boomerangDistance, boomerangWidth, vel, boomerangSeconds));
     }
 
@@ -81,13 +83,13 @@ public class Banana : MonoBehaviour {
 
     void FixedUpdate()
     {
-        rb.AddRelativeTorque((bananaRotation/5) / check);
+        rb.AddRelativeTorque(bananaRotation);
     }
        
     IEnumerator Throw(float dist, float width, Vector3 direction, float time) 
     {
-        rb.useGravity = false;
-        rb.velocity = Vector3.zero;
+        //rb.useGravity = false;
+        //rb.velocity = Vector3.zero;
         Quaternion q = Quaternion.FromToRotation (Vector3.right, direction); 
         float timer = 0.0f;
         float timeT = time;
@@ -112,18 +114,13 @@ public class Banana : MonoBehaviour {
                 timer = 0.0f;
             } 
 
-            if ((timer / time) > 0.3f && step.x >= 0)
+            if (step.x >= 0)
             {
                 check -= bananaEase;
             }
-            else if (!stopAcc)
+            else
             {
-                check += (bananaEase * 0.85f);
-                if (check > 1)
-                {
-                    check = 1;
-                    stopAcc = true;
-                }
+                check += bananaEase * 0.65f;
             }
                 
             rb.MovePosition(pos + qv);
@@ -154,6 +151,9 @@ public class Banana : MonoBehaviour {
             {
                 temp = pos + qv; 
             }
+
+            Debug.Log(check);
+
             yield return null;
         }
             

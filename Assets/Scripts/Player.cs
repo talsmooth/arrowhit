@@ -63,7 +63,7 @@ public class Player : MonoBehaviour {
         {
             Shoot();
         }
-        else if (Input.GetMouseButtonUp(0) && instan)
+        else if (Input.GetMouseButtonUp(0) && instan && Arrow.GetComponent<Rigidbody>() != null)
         {
             instan = false;
             Arrow.GetComponent<Rigidbody>().isKinematic = false;
